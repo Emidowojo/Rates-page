@@ -1,0 +1,139 @@
+:root{
+    --background-color: #302b26;
+    --orange: #eab058;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--background-color);
+}
+#sections-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 6em auto;
+}
+#section-1, #section-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.royal-suite .star-container, .junior-suite .star-container{
+    margin-top: -1em;
+}
+.first-part{
+    background-color: var(--orange);
+    padding: 1.8em;
+}
+.section-1-img img, .section-2-img img{
+    width: 30em;
+    height: 30em;
+    margin-top: .3em;
+}
+#section-2{
+    margin-top: 4em;
+}
+.royal-suite img, .take-action img, .junior-suite img{
+    width: 1.3em;
+}
+.royal-suite .outline-star, .junior-suite .outline-star{
+    width: 1.4em;
+}
+.benefits{
+    margin: 3em auto;
+}
+.benefits p{
+    margin-top: -.6em;
+    font-size: .85em;
+}
+.price span{
+    font-size: 1.5em;
+}
+.take-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1.5em;
+}
+.take-action .book{
+    background-color: var(--background-color);
+    color: var(--orange);
+    font-size: .75em;
+    padding: 1em;
+    width: 9em;
+    text-align: center;
+}
+.tour{
+    border: 2px solid var(--background-color);
+    padding:.7em ;
+    width: 6.5em;
+    text-align: center;
+    height: 3em;
+}
+.tour p{
+    font-size: .75em;
+}
+
+/* media queries */
+@media only screen and (max-width:718px) and (min-width:600px){
+    #section-1, #section-2{
+        flex-direction: column;
+}
+.section-1-img img, .section-2-img img{
+    width: 25em;
+    height: 29em;
+}
+.first-part{
+    padding: 1.8em;
+    width: 21.3em;
+}
+.benefits, .price, .junior-suite, .royal-suite{
+    margin-left: 5.5em;
+}
+}
+@media only screen and (max-width:600px){
+    #section-1, #section-2{
+        flex-direction: column;
+}
+    .section-1-img img, .section-2-img img{
+        width: 20em;
+        height: 24em;
+    }
+    .first-part{
+        padding: 1.8em;
+        width: 16.3em;
+    }
+    .benefits, .price, .junior-suite, .royal-suite{
+        margin-left: 3.2em;
+    }
+}
+@media only screen and (max-width:340px){
+    #section-1, #section-2{
+        flex-direction: column;
+}
+    .section-1-img img, .section-2-img img{
+        width: 15em;
+        height: 18em;
+    }
+    .first-part{
+        padding: 1.8em;
+        width: 11.3em;
+    }
+    .benefits, .price, .junior-suite, .royal-suite{
+        margin-left: 1em;
+    }
+    .royal-suite h2, .junior-suite h2{
+      font-size: 1.2em;
+    }
+    .royal-suite img, .take-action img, .junior-suite img{
+        width: .8em;
+    }
+    .royal-suite .outline-star, .junior-suite .outline-star{
+        width: .9em;
+    }
+}
